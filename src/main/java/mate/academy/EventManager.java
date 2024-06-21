@@ -32,7 +32,6 @@ public class EventManager {
     }
 
     public void notifyEvent(Event event) {
-        System.out.println(event.type());
         Iterator<EventListener> iterator = listeners.iterator();
         while (iterator.hasNext()) {
             EventListener listener = iterator.next();
